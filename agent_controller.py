@@ -3,7 +3,7 @@ import time
 
 CLUSTER = "cluster-b59a"
 REGION = "us-central1"
-JOB_FILE = "gs://agentic-dataproc-pipeline/jobs/wordcount_job.py"
+JOB_FILE = "gs://agentic-elt-dataproc/jobs/wordcount_job.py"
 
 MAX_RETRIES = 3
 RETRY_DELAY = 30  # seconds
@@ -73,3 +73,4 @@ def auto_retry():
 
 if __name__ == "__main__":
     auto_retry()
+
