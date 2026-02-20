@@ -22,7 +22,7 @@ jobs:
 
     - name: Upload Job
       run: |
-        gsutil cp wordcount_job.py gs://agentic-dataproc-pipeline/jobs/
+        gsutil cp wordcount_job.py gs://agentic-elt-dataproc/jobs/
 
     - name: Run Agent
       run: python agent_controller.py
